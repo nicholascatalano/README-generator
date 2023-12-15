@@ -40,7 +40,7 @@ const questions = [
     message:
       "Please choose one of the following licenses for your application.",
     name: "license",
-    choices: ["MIT"],
+    choices: ["MIT", "GNUGPLv3", "GNUGPLv2", "ISC", "Apache2"],
   },
   {
     type: "input",
@@ -72,10 +72,15 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  return inquirer.prompt(questions).then((data) => {
+    const markDown = generateMarkdown(data);
+    fs.writeFileSync("README.md", markDown);
+  });
+}
 
 // Function call to initialize app
 init();
