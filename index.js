@@ -76,8 +76,11 @@ const questions = [
 
 // TODO: Create a function to initialize app
 function init() {
+  // when init function runs, prompt user, then grab the data, and use the data to write the README file
   return inquirer.prompt(questions).then((data) => {
+    // variable to hold markdown data
     const markDown = generateMarkdown(data);
+    // writes the readme file using the markdown data
     fs.writeFileSync("README.md", markDown);
   });
 }
