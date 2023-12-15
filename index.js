@@ -7,12 +7,12 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
   {
     type: "input",
-    message: "What is the title for your application?",
+    message: "What is the title for your application? (Required)",
     name: "title",
   },
   {
     type: "description",
-    message: "Please provide a description of your application.",
+    message: "Please provide a description of your application. (Required)",
     name: "description",
   },
   {
@@ -27,18 +27,18 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please explain how to install the application.",
+    message: "Please explain how to install the application. (Required)",
     name: "installation",
   },
   {
     type: "input",
-    message: "Please explain how to use the application.",
+    message: "Please explain how to use the application. (Required)",
     name: "usage",
   },
   {
     type: "list",
     message:
-      "Please choose one of the following licenses for your application.",
+      "Please choose one of the following licenses for your application. (Required)",
     name: "license",
     choices: ["MIT"],
   },
@@ -61,12 +61,12 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please provide your github username.",
+    message: "Please provide your github username. (Required)",
     name: "username",
   },
   {
     type: "input",
-    message: "Please provide your email address.",
+    message: "Please provide your email address. (Required)",
     name: "email",
   },
 ];
