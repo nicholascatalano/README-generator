@@ -54,23 +54,33 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Installation
-  ${data.usage}
+  ${data.installation}
   Link to live website if applicable: ${data.urlLink}
 
   ## Usage
-
+  ${data.usage}
 
   ## License
+  ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
+  ${renderLicenseSection(data.license)}
 
   ## Image
+  ${data.image}
 
   ## Contributing
+  ${data.contributing}
 
   ## Tests
+  ${data.tests}
 
   ## Questions
+  If you have any questions, please contact me using the following:
+  - Github: ${data.username}
+  - Email: ${data.email}
 
   ## Credits
+  ${data.credits}
 `;
 }
 
