@@ -4,25 +4,27 @@ function renderLicenseBadge(license) {
   const badge = {
     MIT: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
   };
-  if (!license) {
-    return "";
-  } else {
+  if (license !== "No License") {
     return badge[license];
+  } else {
+    return "";
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-// function renderLicenseLink(license) {
-//   const licenseLink = {
-//     MIT: "[MIT](https://choosealicense.com/licenses/mit/)",
-//   };
-//   if (!license) {
-//     return "";
-//   } else {
-//     return licenseLink[license];
-//   }
-// }
+function renderLicenseLink(license) {
+  switch (license) {
+    case "MIT":
+      return "https://opensource.org/licenses/MIT";
+    case "Apache 2.0":
+      return "https://www.apache.org/licenses/LICENSE-2.0";
+    case "GNU GPLv3":
+      return "https://www.gnu.org/licenses/gpl-3.0.en.html";
+    case "ISC":
+      return "https://opensource.org/licenses/ISC";
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string

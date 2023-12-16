@@ -40,7 +40,7 @@ const questions = [
     message:
       "Please choose one of the following licenses for your application. (Required)",
     name: "license",
-    choices: ["MIT"],
+    choices: ["MIT", "Apache 2.0", "GNU GPLv3", "ISC", "No License"],
   },
   {
     type: "input",
