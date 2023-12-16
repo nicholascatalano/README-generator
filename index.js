@@ -17,11 +17,6 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please provide a link to the live website.",
-    name: "urlLink",
-  },
-  {
-    type: "input",
     message: "Please provide a link to an image of the application.",
     name: "image",
   },
@@ -32,7 +27,8 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please explain how to use the application. (Required)",
+    message:
+      "Please explain how to use the application. If there is a live link, include that as well. (Required)",
     name: "usage",
   },
   {
@@ -61,7 +57,7 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please provide your github username. (Required)",
+    message: "Please provide a link to your github account. (Required)",
     name: "username",
   },
   {

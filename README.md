@@ -1,4 +1,6 @@
-# Nick
+# README Generator
+
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Table of Contents
   - [Description](#description)
@@ -12,22 +14,17 @@
   - [Credits](#credits)
 
   ## Description
-  
+  This is a README generator.
 
   ## Installation
-  
-  Link to live website if applicable: 
+  npm init, npm i inquirer@^8
+  Link to live website if applicable: undefined
 
   ## Usage
-  
+  Type node index, then answer the prompts.
 
-  function renderLicenseSection(license) {
-  if (!license) {
-    return "";
-  } else {
-    return `## ${renderLicenseBadge}`;
-  }
-}
+  ## License
+  This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
 
   ## Image
   
@@ -40,8 +37,8 @@
 
   ## Questions
   If you have any questions, please contact me using the following:
-  - Github: 
-  - Email: 
+  - Github: github.com/nicholascatalano
+  - Email: nickcatalano24@gmail.com
 
   ## Credits
   
